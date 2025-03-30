@@ -2,8 +2,8 @@ package com.javilesaca.ranking.controller;
 
 
 import com.javilesaca.ranking.model.Videojuego;
+import com.javilesaca.ranking.scraping.WebScrapingService;
 import com.javilesaca.ranking.service.VideoJuegoService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,8 +13,13 @@ import java.util.List;
 @RequestMapping("/api/videojuegos")
 public class VideojuegoController {
 
-    @Autowired
-    private VideoJuegoService videojuegoService;
+    private final VideoJuegoService videojuegoService;
+    private final WebScrapingService webScrapingService;
+
+    public VideojuegoController(VideoJuegoService videoJuegoService, WebScrapingService webScrapingService) {
+        this.videojuegoService = videoJuegoService;
+        this.webScrapingService = webScrapingService;
+    }
 
     @GetMapping
     public List<Videojuego> listarVideojuegos(){
