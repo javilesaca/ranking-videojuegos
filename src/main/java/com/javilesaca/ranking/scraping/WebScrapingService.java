@@ -7,9 +7,18 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 
+/**
+ * Servicio para realizar web scraping y obtener información de videojuegos.
+ */
 @Service
 public class WebScrapingService {
 
+    /**
+     * Obtiene la descripción de un videojuego desde Metacritic.
+     *
+     * @param juego Nombre del videojuego a buscar.
+     * @return Descripción del juego o un mensaje de error si no se encuentra.
+     */
     public String ObtenerDescripcionJuego(String juego) {
         try {
             String url = "https://www.metacritic.com/search/game/" + juego.replace(" ", "%20") + "/results";

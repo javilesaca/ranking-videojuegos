@@ -1,7 +1,7 @@
 package com.javilesaca.ranking.service;
 
 import com.javilesaca.ranking.model.Videojuego;
-import com.javilesaca.ranking.repository.VideoJuegoRepository;
+import com.javilesaca.ranking.repository.VideojuegoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import java.util.Optional;
 @Service
 public class VideoJuegoService {
     @Autowired
-    private VideoJuegoRepository videoJuegoRepository;
+    private VideojuegoRepository videoJuegoRepository;
 
     //Metodos
     public List<Videojuego> listarTodos() {

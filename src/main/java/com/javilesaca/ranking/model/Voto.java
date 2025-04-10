@@ -2,6 +2,12 @@ package com.javilesaca.ranking.model;
 
 import jakarta.persistence.*;
 
+/**
+ * Representa un voto realizado por un usuario sobre un videojuego.
+ * @author Javier Lesaca Medina
+ */
+
+
 @Entity
 public class Voto {
     @Id

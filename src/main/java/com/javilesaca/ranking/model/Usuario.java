@@ -3,7 +3,10 @@ package com.javilesaca.ranking.model;
 import jakarta.persistence.*;
 
 import java.util.List;
-
+/**
+ * Representa un usuario dentro del sistema.
+ * @author Javier Lesaca Medina
+ */
 @Entity
 public class Usuario {
     @Id
