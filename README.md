@@ -43,7 +43,7 @@ cd ranking-videojuegos
 ```bash
 ./mvnw spring-boot:run
 ```
- Accede a la API en: http://localhost:8080/api/videojuegos
+4. Accede a la API en: http://localhost:8080/api/videojuegos
 
 ---
 
@@ -69,6 +69,7 @@ En desarrollo. Se puede añadir pruebas con JUnit 5 y Spring Boot Test para vali
 Javier Lesaca Medina
 
 ---
+
 ## ⭐ Licencia
 Este proyecto está bajo la licencia MIT.
 
